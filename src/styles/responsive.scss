@@ -1,7 +1,7 @@
 @media screen and (min-width: 1400px) and (max-width: 1399.98px) {
   .jumbotron {
     min-width: 1400px;
-    height: 90vh;
+    height: 91vh;
     // background-image: url('/dist/heros/hero-image_2-large.jpg');
     background-size: cover;
     background-position: center;
@@ -21,7 +21,7 @@
 @media screen and (min-width: 1200px) and (max-width: 1199.98px) {
   .jumbotron {
     min-width: 1200px;
-    height: 90vh;
+    height: 91vh;
     // background-image: url('/dist/heros/hero-image_2-large.jpg');
     background-size: cover;
     background-position: center;
@@ -52,7 +52,7 @@
 
   .jumbotron {
     // background-image: url('/dist/heros/hero-image_2-large.jpg');
-    height: 90vh;
+    height: 91vh;
     width: 100vw;
     background-size: cover;
     background-position: center;
@@ -101,6 +101,22 @@
   .add-review {
     grid-template-columns: .6fr;
   }
+}
+
+@media screen and (min-width: 576px) and (max-width: 575.98px) {
+  .food {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    margin: 0;
+  }
+
+  .scroll {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .open {
+    transform: translate(0, 0) !important;
+  }
 
   .app-bar {
     grid-template-columns: 1fr auto;
@@ -129,22 +145,6 @@
         }
       }
     }
-  }
-}
-
-@media screen and (min-width: 576px) and (max-width: 575.98px) {
-  .food {
-    display: grid;
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-    margin: 0;
-  }
-
-  .scroll {
-    background-color: rgba(0, 0, 0, 0.7);
-  }
-
-  .open {
-    transform: translate(0, 0) !important;
   }
 
   .nav {
