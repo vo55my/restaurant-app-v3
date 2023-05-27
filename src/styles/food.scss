@@ -1,0 +1,35 @@
+h2 {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.food {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  align-items: center;
+  justify-items: center;
+  padding-bottom: 20px;
+}
+
+.card {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  grid-template-rows: 1fr 1fr;
+}
+
+.meal-img {
+  width: 100%;
+  border-radius: 5px;
+  height: 200px;
+}
+
+.meal-title {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 18px;
+  text-align: center;
+}

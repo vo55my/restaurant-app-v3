@@ -1,0 +1,70 @@
+.title {
+  margin: 40px 0;
+  text-align: center;
+}
+
+#restaurants {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 80px;
+  padding: 0 20px;
+}
+
+.card {
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  grid-template-rows: 1fr 1fr;
+
+  .card-img {
+    width: 100%;
+    border-radius: 5px;
+    height: 200px;
+  }
+
+  .card-title {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .rating,
+  .lokasi,
+  .deskripsi {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: black;
+  }
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.rating,
+.lokasi {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.deskripsi {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.btn-detail {
+  display: flex;
+  justify-content: center;
+}
