@@ -22,7 +22,7 @@ const Favorites = {
         });
         load.style.display = 'none';
       } else {
-        const title = document.querySelector('#title');
+        const title = document.querySelector('.title');
         title.innerHTML = 'No Favorite Restaurant';
         load.style.display = 'none';
       }

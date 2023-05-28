@@ -4,7 +4,7 @@ const createRestoDetailTemplate = (restaurant) => `
 <img data-src="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}" alt="${restaurant.name}" class="resto-img lazyload">
   <div class="detail-body">
     <div class="favorite" tabindex="0">
-      <h1><div id="likeButtonContainer"></div> ${restaurant.name}</h1>
+      <h1 class="resto-name"><div id="likeButtonContainer"></div> ${restaurant.name}</h1>
     </div>
     <div class="categories">
     ${restaurant.categories.map((category) => `<p class="category" tabindex="0">${category.name}</p>`).join('')}

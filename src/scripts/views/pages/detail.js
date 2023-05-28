@@ -3,9 +3,10 @@ import RestaurantSource from '../../data/RestaurantSource';
 import {
   createRestoDetailTemplate, createReviewTemplate, loader, failedLoad,
 } from '../templates/template-creator';
-import LikeButtonInitiator from '../../utils/like-button-initiator';
+import LikeButtonPresenter from '../../utils/like-button-presenter';
 import formReview from '../../utils/form-review';
 import '../component/review';
+import FavoriteRestaurant from '../../data/FavoriteRestaurant';
 
 const Detail = {
   async render() {
@@ -29,8 +30,9 @@ const Detail = {
       const reviewContainer = document.querySelector('#review');
       reviewContainer.innerHTML += createReviewTemplate(restaurant.customerReviews);
 
-      LikeButtonInitiator.init({
+      LikeButtonPresenter.init({
         likeButtonContainer: document.querySelector('#likeButtonContainer'),
+        favoriteRestaurants: FavoriteRestaurant,
         restaurant: {
           id: restaurant.id,
           name: restaurant.name,
