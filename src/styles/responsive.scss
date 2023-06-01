@@ -1,8 +1,8 @@
-@media screen and (min-width: 1400px) and (max-width: 1399.98px) {
+@media screen and (min-width: 1400px) {
   .jumbotron {
     min-width: 1400px;
     height: 91vh;
-    // background-image: url('/dist/heros/hero-image_2-large.jpg');
+    background-image: url('/dist/heros/hero-image_2-small.jpg');
     background-size: cover;
     background-position: center;
     color: white;
@@ -18,11 +18,11 @@
   }
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1199.98px) {
+@media screen and (min-width: 1200px) {
   .jumbotron {
     min-width: 1200px;
     height: 91vh;
-    // background-image: url('/dist/heros/hero-image_2-large.jpg');
+    background-image: url('/dist/heros/hero-image_2-small.jpg');
     background-size: cover;
     background-position: center;
     color: white;
@@ -38,10 +38,10 @@
   }
 }
 
-@media screen and (min-width: 992px) and (max-width: 991.98px) {
+@media screen and (min-width: 992px) {
   .food {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     margin: 0;
   }
 
@@ -51,7 +51,7 @@
   }
 
   .jumbotron {
-    // background-image: url('/dist/heros/hero-image_2-large.jpg');
+    background-image: url('/dist/heros/hero-image_2-medium.jpg');
     height: 91vh;
     width: 100vw;
     background-size: cover;
@@ -73,15 +73,15 @@
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 767.98px) {
+@media screen and (min-width: 768px) {
   .food {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     margin: 0;
   }
 
   .jumbotron {
-    // background-image: url('/dist/heros/hero-image_2-medium.jpg');
+    background-image: url('/dist/heros/hero-image_2-large.jpg');
     height: 90vh;
     width: 100vw;
     background-size: cover;
@@ -103,10 +103,10 @@
   }
 }
 
-@media screen and (min-width: 576px) and (max-width: 575.98px) {
+@media screen and (min-width: 576px) {
   .food {
     display: grid;
-    grid-template-columns: repeat(1, minmax(0, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     margin: 0;
   }
 
@@ -203,7 +203,7 @@
     width: 100vw;
     background-size: cover;
     background-position: center;
-    // background-image: url('/dist/heros/hero-image_2-small.jpg');
+    background-image: url('/dist/heros/hero-image_2-large.jpg');
     color: white;
     text-align: center;
     display: flex;

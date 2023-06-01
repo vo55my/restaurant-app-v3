@@ -55,7 +55,7 @@ const createReviewTemplate = (data) => {
     reviewElement += `
     <div class="review-container">
       <div class="review-head">
-        <p>${review.name}, ${review.date}</p>
+        <p class="name">${review.name}, ${review.date}</p>
       </div>
       <p class="review-body">${review.review}</p>
     </div>`;
