@@ -2,7 +2,7 @@
   .jumbotron {
     min-width: 1400px;
     height: 91vh;
-    background-image: url('/dist/heros/hero-image_2-small.jpg');
+    background-image: url('/src/public/heros/hero-image_2-small.jpg');
     background-size: cover;
     background-position: center;
     color: white;
@@ -22,7 +22,7 @@
   .jumbotron {
     min-width: 1200px;
     height: 91vh;
-    background-image: url('/dist/heros/hero-image_2-small.jpg');
+    background-image: url('/src/public/heros/hero-image_2-medium.jpg');
     background-size: cover;
     background-position: center;
     color: white;
@@ -51,7 +51,7 @@
   }
 
   .jumbotron {
-    background-image: url('/dist/heros/hero-image_2-medium.jpg');
+    background-image: url('/src/public/heros/hero-image_2-large.jpg');
     height: 91vh;
     width: 100vw;
     background-size: cover;
@@ -81,7 +81,7 @@
   }
 
   .jumbotron {
-    background-image: url('/dist/heros/hero-image_2-large.jpg');
+    background-image: url('/src/public/heros/hero-image_2-large.jpg');
     height: 90vh;
     width: 100vw;
     background-size: cover;
@@ -203,7 +203,7 @@
     width: 100vw;
     background-size: cover;
     background-position: center;
-    background-image: url('/dist/heros/hero-image_2-large.jpg');
+    background-image: url('/src/public/heros/hero-image_2-large.jpg');
     color: white;
     text-align: center;
     display: flex;
