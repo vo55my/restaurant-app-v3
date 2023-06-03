@@ -10,9 +10,13 @@ const likingRestaurant = async ({ I }) => {
   I.see('No Favorite Restaurant', '.title');
 
   I.amOnPage('/');
+
+  I.waitForElement('.card');
   I.seeElement('.card a');
-  const firstRestaurant = await locate('.card a').first();
-  I.click(firstRestaurant);
+  const firstRestaurant = locate('.card a').first();
+  const firstLink = await I.grabAttributeFrom(firstRestaurant, 'href');
+  I.amOnPage(firstLink);
+
   const firstRestaurantTitle = await I.grabTextFrom('.resto-name');
 
   I.seeElement('#likeButton');
