@@ -1,28 +1,12 @@
-@media screen and (min-width: 1400px) {
-  .jumbotron {
-    min-width: 1400px;
-    height: 91vh;
-    background-image: url('/src/public/heros/hero-image_2-small.jpg');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 0;
-  }
-
+@media screen and (min-width: 1200px) {
   .container {
     z-index: 0;
   }
-}
 
-@media screen and (min-width: 1200px) {
   .jumbotron {
     min-width: 1200px;
     height: 91vh;
-    background-image: url('/src/public/heros/hero-image_2-medium.jpg');
+    background-image: url('/src/public/heros/hero-image_2-large.jpg');
     background-size: cover;
     background-position: center;
     color: white;
@@ -30,10 +14,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 0;
-  }
-
-  .container {
     z-index: 0;
   }
 }
@@ -42,11 +22,6 @@
   .food {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    margin: 0;
-  }
-
-  #restaurant {
-    grid-template-columns: 1fr 1fr;
     margin: 0;
   }
 
@@ -81,7 +56,7 @@
   }
 
   .jumbotron {
-    background-image: url('/src/public/heros/hero-image_2-large.jpg');
+    background-image: url('/src/public/heros/hero-image_2-medium.jpg');
     height: 90vh;
     width: 100vw;
     background-size: cover;
@@ -92,10 +67,6 @@
     align-items: center;
     justify-content: center;
     z-index: 0;
-  }
-
-  #restaurant {
-    grid-template-columns: 1fr;
   }
 
   .add-review {
@@ -203,12 +174,18 @@
     width: 100vw;
     background-size: cover;
     background-position: center;
-    background-image: url('/src/public/heros/hero-image_2-large.jpg');
+    background-image: url('/src/public/heros/hero-image_2-small.jpg');
     color: white;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .card {
+    max-width: 250px;
   }
 }
