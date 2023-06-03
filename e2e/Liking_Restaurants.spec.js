@@ -6,7 +6,6 @@ Before(({ I }) => {
   I.amOnPage('/#/favorites');
 });
 
-// eslint-disable-next-line no-unused-vars
 const likingRestaurant = async ({ I }) => {
   I.see('No Favorite Restaurant', '.title');
   I.amOnPage('/');
@@ -30,28 +29,28 @@ const likingRestaurant = async ({ I }) => {
   assert.strictEqual(firstRestaurantTitle, likedRestaurant);
 };
 
-// Scenario('showing empty liked restaurant', ({ I }) => {
-//   I.wait(5);
-//   I.seeElement('.title');
-//   I.see('No Favorite Restaurant', '.title');
-// });
+Scenario('showing empty liked restaurant', ({ I }) => {
+  I.wait(5);
+  I.seeElement('.title');
+  I.see('No Favorite Restaurant', '.title');
+});
 
-// Scenario('liking one restaurant', async ({ I }) => {
-//   I.wait(5);
-//   await likingRestaurant({ I });
-// });
+Scenario('liking one restaurant', async ({ I }) => {
+  I.wait(5);
+  await likingRestaurant({ I });
+});
 
-// Scenario('unliking one restaurant', async ({ I }) => {
-//   I.wait(5);
-//   await likingRestaurant({ I });
+Scenario('unliking one restaurant', async ({ I }) => {
+  I.wait(5);
+  await likingRestaurant({ I });
 
-//   I.amOnPage('/#/favorites');
-//   I.seeElement('.card');
-//   I.click('.card a');
+  I.amOnPage('/#/favorites');
+  I.seeElement('.card');
+  I.click('.card a');
 
-//   I.seeElement('#likeButton');
-//   I.click('#likeButton');
+  I.seeElement('#likeButton');
+  I.click('#likeButton');
 
-//   I.amOnPage('/#/favorites');
-//   I.see('No Favorite Restaurant', '.title');
-// });
+  I.amOnPage('/#/favorites');
+  I.see('No Favorite Restaurant', '.title');
+});
