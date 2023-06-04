@@ -28,7 +28,7 @@ Scenario('Review one restaurant', async ({ I }) => {
 
   I.wait(5);
   I.seeElement(locate('#review .review-container:nth-last-of-type(1)'));
-  const reviewerName = await I.grabTextFrom(locate('#review .review-container:nth-last-of-type(1) .review-head .name'));
+  const reviewerName = (await I.grabTextFrom(locate('#review .review-container:nth-last-of-type(1) .review-head .name'))).split(',')[0];
   const reviewerReview = await I.grabTextFrom(locate('#review .review-container:nth-last-of-type(1) .review-body'));
 
   assert.strictEqual(name, reviewerName);
