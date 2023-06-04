@@ -17,7 +17,7 @@ class Header extends HTMLElement {
       <ul>
         <li><a class="page" href="#/">Home</a></li>
         <li><a class="page" href="#/favorites">Favorites</a></li>
-        <li><a class="page" href="https://www.linkedin.com/in/dhaifullah-hilmy/" target="_blank">About Us</a></li>
+        <li><a class="page" href="https://www.linkedin.com/in/dhaifullah-hilmy/" target="_blank" rel="noreferrer">About Us</a></li>
       </ul>
     </nav>
   </header>`;

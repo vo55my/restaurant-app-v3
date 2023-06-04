@@ -77,7 +77,7 @@ const createLikedButtonTemplate = () => `
 
 const createMealItemTemplate = (meal) => `
   <div class="card" tabindex="0">
-    <img data-src="${meal.strMealThumb}" alt="${meal.strMeal} Gambar" class="lazyload meal-img">
+    <img data-src="${meal.strMealThumb}" alt="${meal.strMeal}" class="lazyload meal-img">
     <h3 class ="meal-title">${meal.strMeal}</h3>
   </div>
 `;
